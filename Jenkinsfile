@@ -5,8 +5,8 @@ node {
    //def mvnHome = 'C:\\apache-maven-3.5.4'
   
   stage('SCM CheckOut') {
-    git 'https://github.com/ManuelKumar/sparkjava.git'
-  }
+    git 'https://github.com/ManuelKumar/ManuelLearning.git'
+  }  
   
   stage('Build Stage') {
      def mvnHome = tool name: 'maven-3', type: 'maven'
