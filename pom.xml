@@ -9,11 +9,22 @@
   <url>http://maven.apache.org</url>
   
   	<distributionManagement>
+  	
+		
+		    <repository>
+		        <id>spring-releases</id>
+		        <name>Spring Releases</name>
+		        <url>https://repo.spring.io/libs-release</url>
+		    </repository>
+
+		
+		
 		<snapshotRepository>
 		<id>snapshots</id>
 		<name>DESKTOP-1P7TPHD-snapshots</name>
 		<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
- 	    </snapshotRepository>
+ 	    </snapshotRepository>		    
+ 	    
     </distributionManagement>
   
   <dependencies>
@@ -51,9 +62,17 @@
 
   </dependencies>
   
+  
+  
  <build>
+ 
+       
+
+  
+    
     <plugins>
         <!-- we want JDK 1.6 source and binary compatiblility -->
+      
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
@@ -78,6 +97,8 @@
     </plugins>
     <finalName>yahoooh</finalName>
   </build>
+  
+  
   
   
 </project>
