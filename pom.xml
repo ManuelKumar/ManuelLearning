@@ -17,7 +17,11 @@
 		        <url>https://repo.spring.io/libs-release</url>
 		    </repository>
 
-		
+			<!--  <snapshotRepository>
+				<id>snapshots</id>
+				<name>DESKTOP-1P7TPHD-snapshots</name>
+					<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+	 	    </snapshotRepository>-->	
 		
 		    
  	    
