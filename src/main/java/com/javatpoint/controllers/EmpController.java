@@ -9,7 +9,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;  
 
 @Controller  
-public class EmpController {  
+public class EmpController { 
+	
+    @RequestMapping("/hello")  
+    public ModelAndView hello(){  
+         //command is a reserved request attribute name, now use <form> tag to show object data  
+        return new ModelAndView("hellopage");  
+    }  	
   
     @RequestMapping("/empform")  
     public ModelAndView showform(){  
